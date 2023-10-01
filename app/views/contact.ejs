@@ -1,0 +1,67 @@
+<!--contact.ejs | Vincent Chen | 301245927 | September 30, 2023 -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <div class="fade-in-text">
+    <h1><%= title %></h1>
+    <hr><br><br><br><br>
+    <h2>Contact Information</h2>
+    <hr>
+    <img class = "imgborder" src="/img/Vincent1.png" alt="Vincent1" style="float:right;" width="462px" height="500px">
+    <br><br><p>If you’re looking for quality service, Vincent welcomes your inquiries.
+      <br><br>Contact him using the form below, send him an email (vchen03@VCEXpress.ca) or give 
+      him a call at (519)-108-3672. He’ll respond at his earliest 
+      convenience.</p>
+      <br><br>
+
+    <form class = "formbox" action="mailto:vchen03@VCEXpress.ca" method="post" enctype="text/plain">
+      <fieldset>
+       <legend><b>Contact us:</b></legend>
+       <label for="fname"><b>First name:</b></label>
+       <input type="text" id="fname" name="fname"><br><br>
+       <label for="lname"><b>Last name:</b></label>
+       <input type="text" id="lname" name="lname"><br><br>
+       <label for="phnumber"><b>Phone number:</b></label>
+      <input type="tel" id="phnumber" name="phnumber" placeholder="123-456-7890">
+       <label for="email"><b>Email:</b></label>
+       <input type="email" id="email" name="email">
+        <br><br><br>
+        <label for="adinfo"><b>Additional Information:</b></label></p>
+        <textarea id="adinfo" name="adinfo" rows="8" cols="50">Please enter any additional information that you would like to let us know.</textarea>
+       <br><br><br><br>
+       <a href="/home">
+       <input type="submit" value="Submit">
+      </a>
+       <input type="reset" value="Reset">
+      </fieldset>
+     </form>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="fade-in-text">
+    <h3>Other content</h3>
+    <div class = "listhover">
+    <div id = "listhover-nav-item">
+    <a href="/about"><h4>Check out the About me page</h4></a>
+    </div>
+    <div id = "listhover-nav-item">
+    <a href="/services"><h4>Check out the Services page</h4></a>
+    </div>
+    <div id = "listhover-nav-item">
+    <a href="/project"><h4>Check out the Projects page</h4></a>
+    </div>
+  </div>
+</div>
+  <br><br><br><br><br>
+</div>
+    </main>
+    <!--bottom nav-->
+    
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
